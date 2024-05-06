@@ -1,1 +1,86 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Raleway";
+}
+
+html {
+  font-size: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  border: 1px solid red;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.header section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header section .logo {
+  margin-right: 10vw;
+}
+.header section .nav-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  margin-right: 10vw;
+}
+.header section .nav-link {
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  color: #282B22;
+  transition: all 0.2s linear;
+}
+.header section .nav-link:hover {
+  color: #AE7B3C;
+}
+.header section .header__links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  margin-right: 6vw;
+}
+.header section .header__phone {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1px;
+}
+.header section .header__phone a span {
+  color: #282B22;
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+}/*# sourceMappingURL=style.css.map */

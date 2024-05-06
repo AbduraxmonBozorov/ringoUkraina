@@ -1,0 +1,69 @@
+.header {
+  border: 1px solid red;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    .logo {
+      margin-right: 10vw;
+    }
+
+    .nav-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 40px;
+      margin-right: 10vw;
+    }
+
+    .nav-link {
+      //styleName: Пункти меню_16 px (medium);
+      font-family: "Raleway";
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 16px;
+      text-align: left;
+      color: $qora;
+      transition: all 0.2s linear;
+      &:hover {
+        color: $korichniy;
+      }
+    }
+
+    .header__links {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 15px;
+      margin-right: 6vw;
+    }
+
+    .header__phone {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1px;
+
+      a {
+        span {
+          color: $qora;
+          font-family: 'Lato';
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 20px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
