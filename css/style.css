@@ -11,7 +11,7 @@ html {
   font-size: 20px;
 }
 
-button {
+button, a {
   cursor: pointer;
 }
 
@@ -124,12 +124,10 @@ button {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.85));
 }
 .main .hero .container {
-  border: solid white;
   position: relative;
   height: 100%;
 }
 .main .hero .container .hero-text {
-  border: 1px solid white;
   height: 100%;
   width: 50%;
   flex-direction: column;
