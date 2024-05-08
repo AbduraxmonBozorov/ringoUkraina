@@ -1,69 +1,94 @@
 .header {
-  border: 1px solid red;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  section {
+  %dfrc {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    .logo {
-      margin-right: 10vw;
-    }
+  }
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  padding: 20px 0px;
+  background-color: white;
+  .container {
+    @extend %dfrc;
+    justify-content: space-between;
+  }
+  .logo img {
+    width: 122px;
+    height: 53px;
+  }
 
-    .nav-list {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 40px;
-      margin-right: 10vw;
-    }
+  .nav-list {
+    @extend %dfrc;
+    gap: 40px;
+  }
 
-    .nav-link {
-      //styleName: Пункти меню_16 px (medium);
-      font-family: "Raleway";
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 16px;
-      text-align: left;
-      color: $qora;
-      transition: all 0.2s linear;
-      &:hover {
-        color: $korichniy;
+  .nav-item {
+    @extend %dfrc;
+    flex-direction: column;
+    position: relative;
+    div {
+      width: 0%;
+      height: 3px;
+      background-color: $korichniy;
+      position: absolute;
+      top: 150%;
+      transition: all 0.3s linear;
+    }
+    &:hover div {
+      width: 100%;
+    }
+    &:hover a {
+      color: $korichniy;
+    }
+  }
+
+  .nav-link {
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    color: $qora;
+    transition: all 0.3s linear;
+  }
+
+  .social {
+    @extend %dfrc;
+    gap: 15px;
+
+    a {
+      @extend %dfrc;
+      img {
+        width: 24px;
+        height: 24px;
       }
     }
+  }
 
-    .header__links {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 15px;
-      margin-right: 6vw;
-    }
-
-    .header__phone {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 1px;
-
-      a {
-        span {
-          color: $qora;
-          font-family: 'Lato';
-          font-size: 20px;
-          font-weight: 600;
-          line-height: 20px;
-          text-align: left;
-        }
+  .phone {
+    @extend %dfrc;
+    a {
+      @extend %dfrc;
+      gap: 7px;
+      img {
+        width: 22px;
+        height: 22px;
+      }
+      span {
+        font-family: 'Lato';
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: left;
+        color: $qora;
       }
     }
   }
 }
+
+
+
